@@ -1,0 +1,47 @@
+body {
+  background-color: beige;
+}
+
+h1 {
+  color: firebrick;
+  font-size: 300%;
+  font-family: cursive;
+  margin: auto;
+  width: 700px;
+  padding: 50px;
+}
+
+.container {
+  display: flex;
+  gap: 0.625%;
+}
+
+a {
+  flex: 1;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  line-height: 3;
+  color: white;
+}
+
+a:link,
+a:visited,
+a:focus {
+  background: maroon;
+}
+
+a:hover {
+  background: indianred;
+}
+
+a:active {
+  background: red;
+  color: white;
+}
+
+img {
+  margin: -150px;
+  width: 250px;
+  padding: 150px;
+}
