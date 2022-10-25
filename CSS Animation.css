@@ -1,0 +1,78 @@
+body{
+    background-color:white;
+}
+
+h1{
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    font-size: 70px;
+    }
+
+div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px 50px;
+    background-color: #89CFF0;
+    position: relative;
+    display: inline-block;
+
+    -ms-flex-align: center;
+    margin: auto;
+  }
+.left {
+  animation-name: move-right, color, shape, transform, heartbeat;
+  animation-iteration-count: inherit, 4, 8, infinite;
+  animation-duration: 2s, 4s, 4s, 2s;
+  animation-timing-function: ease-in, linear, ease-out, ease-in;
+}
+.right {
+    animation-name: heartbeat, color, shape, transform, heartbeat;
+    animation-iteration-count: inherit, 4, 8, infinite;
+    animation-duration: 2s, 4s, 4s, 2s;
+    animation-timing-function: ease-in, linear, ease-out, ease-in;
+}
+
+.middle{
+    animation-name: scale, color, shape, transform, heartbeat;
+    animation-iteration-count: initial, 4, 8, infinite;
+    animation-duration: 2s, 4s, 4s, 2s;
+    animation-timing-function: ease-in, linear, ease-out, ease-in;
+}
+
+  @keyframes move-right {
+    0%   { left: 20px; }
+    50%  { left: 100px; }
+    100% { left: 20px; }
+  }
+
+  @keyframes scale {
+    0%   { scale: 2; }
+    25%  { scale: 4;  }
+    50%  { scale: 3; }
+    75%  { scale: 4; }
+    100% { scale: 2; }
+  }
+  @keyframes heartbeat {
+      0% {transform: scale(0.75);}
+      20% {transform: scale(1);}
+      40% {transform: scale(0.75);}
+      60% {transform: scale(1);}
+      80% {transform: scale(0.75);}
+      100% {transform: scale(0.75);}
+    }
+  @keyframes color {
+    0%   { background: color #ADD8E6; }
+    25%  { background-color:#87cefa;  }
+    75% { background-color: #ADD8E6; }
+    100%   { background: color #87cefa; }
+  }
+
+  @keyframes shape {
+    from { border-radius: 4px; }
+    to { border-radius: 100px; }
+  }
+
+  @keyframes transform{
+      from { transform:rotate(360deg); }
+      to { transform-origin: 100% 100%; }
+  }
