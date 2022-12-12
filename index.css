@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik+Bubbles:wght@900&display=swap');
+body {
+    font-weight: 500; 
+    text-align: center;
+    background-color: #C4A484;
+    font-family:"Rubik Bubbles", serif;
+}
+
+h1 {
+    font-family:"Rubik Bubbles", serif;
+    color: brown;
+    text-shadow: 4px 4px 3px wheat;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: 'Rubik Bubbles', ;
+    color: brown;
+    text-shadow: 2px 2px 0px wheat;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cursor{
+    cursor:url(garden-shovel.png), auto;
+}
